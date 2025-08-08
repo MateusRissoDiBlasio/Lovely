@@ -1,0 +1,39 @@
+.swiper {
+  width: 400px;
+  height: 400px;
+  overflow: visible;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  overflow: visible;
+}
+
+.swiper-slide:nth-child(1n) {
+  background-color: transparent;
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: transparent;
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: transparent;
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: transparent;
+}
+
+.swiper-slide:nth-child(5n) {
+  background-color: transparent;
+}
+
+.swiper-3d .swiper-slide-shadow {
+  background-color: transparent;
+}

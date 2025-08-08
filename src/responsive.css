@@ -1,0 +1,101 @@
+@media screen and (max-width: 1164px) {
+
+.background-video{
+    video{
+        position: relative;
+        z-index: 0;
+        height: 125vh;
+    }
+}
+
+.msgs{
+    margin-top: -225px;
+    margin-left: -320px;
+}
+
+.msg1{
+    transform: translate(75px, -240px);
+    font-size: 12px;
+}
+
+.msg1-1{
+    transform: translate(75px, -240px);
+    font-size: 12px;
+}
+
+.msg2 {
+    transform: translate(0px, 0px);
+    font-size: 35px;
+}
+
+.msg2-1{
+    transform: translate(0px, 0px);
+    font-size: 35px;
+
+}
+
+.msg2-2{
+    transform: translate(0px, 0px);
+    font-size: 45px;
+}
+
+.msg2-3{
+    transform: translate(0px, 0px);
+    font-size: 35px;
+}
+
+.msg2-4{
+    transform: translate(0px, 0px);
+    font-size: 35px;
+}
+
+img {
+    width: 200px;
+}
+
+.hearts{
+    margin-top: 10px;
+    margin-left: -480px;
+    padding: 10px; 
+    
+}
+
+.position-adjust{
+    transform: translate(-20vw, 12.5vh);
+}
+
+#adjust-14{
+    object-position: 0px -200px;
+}
+
+#adjust-32, #adjust-33, #adjust-34{
+    object-position: 0px -85px;
+}
+
+#adjust-35{
+    object-position: 0px -160px;
+}
+
+#adjust-36{
+    object-position: -40px -20px;
+}
+
+#adjust-37{
+    object-position: 0px -110px;
+}
+
+}
+audio{
+    position: relative;
+    z-index: 500;
+    transform: translate(-370px, 30px);
+}
+
+.songname{
+    position: relative;
+    z-index: 500;
+    transform: translate(-370px, 10px);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 16px;
+}

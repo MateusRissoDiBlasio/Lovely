@@ -1,0 +1,344 @@
+img {
+  width: 250px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  --_m: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+  -webkit-mask-box-image: var(--_m);
+            mask-border: var(--_m);
+  clip-path: polygon(-41% 0,50% 91%, 141% 0);  
+}
+
+/* fallback until better support for mask-border */
+@supports not (-webkit-mask-box-image: var(--_m)) { 
+  img {
+  --_m:
+    radial-gradient(at 70% 31%,#000 29%,#0000 30%),
+    radial-gradient(at 30% 31%,#000 29%,#0000 30%),
+    linear-gradient(#000 0 0) bottom/100% 50% no-repeat;
+  -webkit-mask: var(--_m);
+          mask: var(--_m);
+  }
+}
+
+.background-video{
+  display: flex;
+  margin: 0;
+  position: relative;
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+
+  video{
+      position: relative;
+      z-index: 0;
+      height: 115vh;
+    }
+}
+
+.hearts{
+    opacity: 0;
+    width: 400px;
+    height: 100vh;
+    position: relative;
+    margin-top: 30px;
+    margin-left: -500px;
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    background: transparent;
+    z-index: 101;
+    overflow: visible;
+    animation: fadein 5s ease-in forwards;
+}
+
+.heart-1, .heart-2, .heart-3, .heart-4, .heart-5, .heart-6, .heart-7{
+  transition: 1s;
+  filter: drop-shadow(0px 0px 10px red);
+}
+
+.heart-1:hover, .heart-2:hover, .heart-3:hover, .heart-4:hover, .heart-5:hover, .heart-6:hover, .heart-7:hover{
+  transition: 1s;
+  scale: 1.2;
+  filter: drop-shadow(0px 0px 15px red);
+}
+
+
+#adjust-12{
+  object-position: 0px -180px;
+}
+
+#adjust-13{
+  object-position: 0px -80px;
+}
+
+#adjust-14{
+  object-position: 0px -220px;
+}
+
+
+#adjust-32, #adjust-33, #adjust-34{
+  object-position: 0px -105px;
+}
+
+#adjust-35{
+  object-position: 0px -180px;
+}
+
+#adjust-36{
+  object-position: -40px -20px;
+}
+
+#adjust-37{
+  object-position: 0px -130px;
+}
+
+.maximized-photo{
+    transition: 2s;  
+    -webkit-mask-box-image: none;
+    clip-path: none;
+    scale: 2; 
+}
+
+.position-adjust{
+  transform: translate(-20vw, 7.5vh);
+}
+
+.position-adjust2{
+  transform: translate(-20vw, -4vh);
+}
+
+.position-adjust3{
+  transform: translate(-20vw, -20vh);
+}
+
+.normal-photo{
+    transition-duration: 1s;
+    scale: 1;
+}
+
+
+.msgs{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: -315px;
+  p{
+    margin: 0;
+  }
+}
+
+
+.msg1{
+  position: relative;
+  z-index: 101;
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  transform: translate(-45px, -500px);
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  width: 58ch;
+  animation: showup 0.1s 2s forwards, typing 6s 2s steps(58), blink .5s 2s step-end infinite alternate, noborder 0.1s 8s forwards;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 14px;
+  white-space: nowrap;
+  border-right: 3px solid;
+}
+
+.msg1-1{
+  position: relative;
+  z-index: 101;
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  transform: translate(-45px, -500px);
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  width: 58ch;
+  animation: showup 0.1s 8s forwards, typing 6s 8s steps(58), blink .5s 8s step-end infinite alternate;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 14px;
+  white-space: nowrap;
+  border-right: 3px solid;
+}
+
+.msg2 {
+  position: relative;
+  z-index: 10;
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  transform: translate(0px, 0px);
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  width: 38ch;
+  animation: showup 0.1s 2s forwards, typing 4s 2s steps(38), blink .5s 2s step-end infinite alternate, noborder 0.1s 6s forwards;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 40px;
+  white-space: nowrap;
+  border-right: 3px solid;
+}
+
+.msg2-1{
+  position: relative;
+  z-index: 10;
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  transform: translate(0px, 0px);
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  width: 26ch;
+  animation: showup 0.1s 6s forwards, typing 4s 6s steps(26), blink .5s 6s step-end infinite alternate, noborder 0.1s 10s forwards;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 40px;
+  white-space: nowrap;
+  border-right: 3px solid;
+}
+
+.msg2-2{
+  position: relative;
+  z-index: 10;
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  transform: translate(0px, 0px);
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  width: 28ch;
+  animation: showup 0.1s 10s forwards, typing 4s 10s steps(28), blink .5s 10s step-end infinite alternate, noborder 0.1s 14s forwards;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 50px;
+  white-space: nowrap;
+  border-right: 3px solid;
+}
+
+.msg2-3{
+  position: relative;
+  z-index: 10;
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  transform: translate(0px, 0px);
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  width: 38ch;
+  animation: showup 0.1s 14s forwards, typing 4s 14s steps(38), blink .5s 14s step-end infinite alternate, noborder 0.1s 18s forwards;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 40px;
+  white-space: nowrap;
+  border-right: 3px solid;
+}
+
+.msg2-4{
+  position: relative;
+  z-index: 10;
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  transform: translate(0px, 0px);
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  width: 34ch;
+  animation: showup 0.1s 18s forwards, typing 6s 18s steps(34), blink .5s 18s step-end infinite alternate;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 40px;
+  white-space: nowrap;
+  border-right: 3px solid;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes showup{
+  from{
+    visibility: hidden;
+  }
+
+  to{
+    visibility: visible;
+  }
+}
+
+@keyframes noborder {
+
+  100%{
+    border-color: transparent;
+  }
+  
+}
+
+@keyframes fade {
+  50%{
+    opacity: 0;
+  }
+}
+
+@keyframes fadein {
+  100%{
+    opacity: 1;
+  }
+}
+
+.displayerror{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 500;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  p{
+    font-size: 40px;
+    color: red;
+    animation: fade 2s ease-in-out infinite ;
+    align-self: center;
+  }
+}
+
+.songdiv{
+  opacity: 0;
+  animation: fadein 2s ease-in forwards;
+}
+
+audio{
+  position: relative;
+  z-index: 500;
+  transform: translate(-550px, 200px);
+}
+
+.songname{
+  opacity: 0;
+  position: relative;
+  z-index: 500;
+  transform: translate(-370px, 10px);
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-size: 16px;
+  animation: fadein 2s 5s ease-in forwards;
+}
