@@ -9,7 +9,7 @@ import 'swiper/css';
 import 'swiper/css/effect-creative';
 import './swiperstyles.css'
 import { EffectCards } from 'swiper/modules';
-import music from '/music/manha-de-sol.mp3';
+import music from './music/manha-de-sol.mp3';
 
 import { tsParticles } from "@tsparticles/engine";
 import { loadHeartShape } from "@tsparticles/shape-heart";
@@ -2653,7 +2653,7 @@ function App() {
 
           <video autoPlay muted loop>
             {/* <video> */}
-                <source id="background-video" src="/cachu.mp4" type="video/mp4"/>
+                <source id="background-video" src="./video/cachu.mp4" type="video/mp4"/>
             </video>
             <div className='hearts'>
                 <Swiper
@@ -2664,37 +2664,37 @@ function App() {
                 >
                   <SwiperSlide>
                     <div className= 'heart-1' onClick={() => {setIsMaximized(true); maximizeSwiper1Heart1(); handleMsg(); minimizeOthers()}}>
-                      <img id='adjust-11' className={isMaximized && swiper1heart1 ? 'maximized-photo position-adjust' : 'normal-photo'} src="/fotos/antes.jpg" alt="" />
+                      <img id='adjust-11' className={isMaximized && swiper1heart1 ? 'maximized-photo position-adjust' : 'normal-photo'} src="./fotos/antes.jpg" alt="" />
                     </div>
                   </SwiperSlide>
                   
                   <SwiperSlide>
                     <div className='heart-2' onClick={() => {setIsMaximized(true); maximizeSwiper1Heart2(); setMsg(false); minimizeOthers()}}>
-                      <img id='adjust-12' className={isMaximized && swiper1heart2 ? 'maximized-photo position-adjust' : 'normal-photo'} src="/fotos/gess7.jpg" alt="" />
+                      <img id='adjust-12' className={isMaximized && swiper1heart2 ? 'maximized-photo position-adjust' : 'normal-photo'} src="./fotos/gess7.jpg" alt="" />
                     </div>
                   </SwiperSlide>
                   
                   <SwiperSlide>
                     <div className='heart-3' onClick={() => {setIsMaximized(true); maximizeSwiper1Heart3(); setMsg(false); minimizeOthers()}}>
-                      <img id='adjust-13' className={isMaximized && swiper1heart3 ? 'maximized-photo position-adjust' : 'normal-photo'} src="/fotos/gess6.jpg" alt="" />
+                      <img id='adjust-13' className={isMaximized && swiper1heart3 ? 'maximized-photo position-adjust' : 'normal-photo'} src="./fotos/gess6.jpg" alt="" />
                     </div>
                   </SwiperSlide>
 
                   <SwiperSlide>
                     <div className='heart-4' onClick={() => {setIsMaximized(true); maximizeSwiper1Heart4(); setMsg(false); minimizeOthers()}}>
-                      <img id='adjust-14' className={isMaximized && swiper1heart4 ? 'maximized-photo position-adjust' : 'normal-photo'} src="/fotos/gess5.jpg" alt="" />
+                      <img id='adjust-14' className={isMaximized && swiper1heart4 ? 'maximized-photo position-adjust' : 'normal-photo'} src="./fotos/gess5.jpg" alt="" />
                     </div>
                   </SwiperSlide>
                   
                   <SwiperSlide>
                     <div className='heart-5' onClick={() => {setIsMaximized(true); maximizeSwiper1Heart5(); setMsg(false); minimizeOthers()}}>
-                      <img id='adjust-15' className={isMaximized && swiper1heart5 ? 'maximized-photo position-adjust' : 'normal-photo'} src="/fotos/gess8.jpg" alt="" />
+                      <img id='adjust-15' className={isMaximized && swiper1heart5 ? 'maximized-photo position-adjust' : 'normal-photo'} src="./fotos/gess8.jpg" alt="" />
                     </div>
                   </SwiperSlide>
 
                   <SwiperSlide>
                     <div className='heart-6' onClick={() => {setIsMaximized(true); maximizeSwiper1Heart6(); setMsg(false); minimizeOthers()}}>
-                      <img id='adjust-16' className={isMaximized && swiper1heart6 ? 'maximized-photo position-adjust' : 'normal-photo'} src="/fotos/gess9.jpg" alt="" />
+                      <img id='adjust-16' className={isMaximized && swiper1heart6 ? 'maximized-photo position-adjust' : 'normal-photo'} src="./fotos/gess9.jpg" alt="" />
                     </div>
                   </SwiperSlide>
 
@@ -2708,31 +2708,31 @@ function App() {
                   >
                     <SwiperSlide>
                       <div className='heart-1' onClick={() => {setIsMaximized(true); maximizeSwiper2Heart1(); setMsg(false);  minimizeOthers2()}}>
-                        <img className={isMaximized && swiper2heart1 ? 'maximized-photo position-adjust2' : 'normal-photo'} src="/fotos/gess4.jpg" alt="" />
+                        <img className={isMaximized && swiper2heart1 ? 'maximized-photo position-adjust2' : 'normal-photo'} src="./fotos/gess4.jpg" alt="" />
                       </div>
                     </SwiperSlide>
 
                     <SwiperSlide>
                       <div className='heart-2' onClick={() => {setIsMaximized(true); maximizeSwiper2Heart2(); setMsg(false);  minimizeOthers2()}}>
-                        <img className={isMaximized && swiper2heart2 ? 'maximized-photo position-adjust2' : 'normal-photo'} src="/fotos/gess.jpg" alt="" />
+                        <img className={isMaximized && swiper2heart2 ? 'maximized-photo position-adjust2' : 'normal-photo'} src="./fotos/gess.jpg" alt="" />
                       </div>
                     </SwiperSlide>
                     
                     <SwiperSlide>
                       <div className='heart-3' onClick={() => {setIsMaximized(true); maximizeSwiper2Heart3(); setMsg(false);  minimizeOthers2()}}>
-                        <img className={isMaximized && swiper2heart3 ? 'maximized-photo position-adjust2' : 'normal-photo'} src="/fotos/gess2.jpg" alt="" />
+                        <img className={isMaximized && swiper2heart3 ? 'maximized-photo position-adjust2' : 'normal-photo'} src="./fotos/gess2.jpg" alt="" />
                       </div>
                     </SwiperSlide>
 
                     <SwiperSlide>
                       <div className='heart-4' onClick={() => {setIsMaximized(true); maximizeSwiper2Heart4(); setMsg(false);  minimizeOthers2()}}>
-                        <img className={isMaximized && swiper2heart4 ? 'maximized-photo position-adjust2' : 'normal-photo'} src="/fotos/bike1.jpg" alt="" />
+                        <img className={isMaximized && swiper2heart4 ? 'maximized-photo position-adjust2' : 'normal-photo'} src="./fotos/bike1.jpg" alt="" />
                       </div>
                     </SwiperSlide>
                     
                     <SwiperSlide>
                       <div className='heart-5' onClick={() => {setIsMaximized(true); maximizeSwiper2Heart5(); setMsg(false);  minimizeOthers2()}}>
-                        <img className={isMaximized && swiper2heart5 ? 'maximized-photo position-adjust2' : 'normal-photo'} src="/fotos/bike2.jpg" alt="" />
+                        <img className={isMaximized && swiper2heart5 ? 'maximized-photo position-adjust2' : 'normal-photo'} src="./fotos/bike2.jpg" alt="" />
                       </div>
                     </SwiperSlide>
 
@@ -2746,43 +2746,43 @@ function App() {
                 >
                   <SwiperSlide>
                     <div className='heart-1' onClick={() => {setIsMaximized(true); maximizeSwiper3Heart1(); setMsg(false);  minimizeOthers3()}}>
-                      <img id='adjust-31' className={isMaximized && swiper3heart1 ? 'maximized-photo position-adjust3' : 'normal-photo'} src="/fotos/casal1.jpg" alt="" />
+                      <img id='adjust-31' className={isMaximized && swiper3heart1 ? 'maximized-photo position-adjust3' : 'normal-photo'} src="./fotos/casal1.jpg" alt="" />
                     </div>
                   </SwiperSlide>
 
                   <SwiperSlide>
                     <div className='heart-2' onClick={() => {setIsMaximized(true); maximizeSwiper3Heart2(); setMsg(false);  minimizeOthers3()}}>
-                      <img id='adjust-32' className={isMaximized && swiper3heart2 ? 'maximized-photo position-adjust3' : 'normal-photo'} src="/fotos/casal2.jpg" alt="" />
+                      <img id='adjust-32' className={isMaximized && swiper3heart2 ? 'maximized-photo position-adjust3' : 'normal-photo'} src="./fotos/casal2.jpg" alt="" />
                     </div>
                   </SwiperSlide>
                   
                   <SwiperSlide>
                     <div className='heart-3' onClick={() => {setIsMaximized(true); maximizeSwiper3Heart3(); setMsg(false);  minimizeOthers3()}}>
-                      <img id='adjust-33' className={isMaximized && swiper3heart3 ? 'maximized-photo position-adjust3' : 'normal-photo'} src="/fotos/casal3.jpg" alt="" />
+                      <img id='adjust-33' className={isMaximized && swiper3heart3 ? 'maximized-photo position-adjust3' : 'normal-photo'} src="./fotos/casal3.jpg" alt="" />
                     </div>
                   </SwiperSlide>
 
                   <SwiperSlide>
                     <div className='heart-4' onClick={() => {setIsMaximized(true); maximizeSwiper3Heart4(); setMsg(false);  minimizeOthers3()}}>
-                      <img id='adjust-34' className={isMaximized && swiper3heart4 ? 'maximized-photo position-adjust3' : 'normal-photo'} src="/fotos/casal5.jpg" alt="" />
+                      <img id='adjust-34' className={isMaximized && swiper3heart4 ? 'maximized-photo position-adjust3' : 'normal-photo'} src="./fotos/casal5.jpg" alt="" />
                     </div>
                   </SwiperSlide>
                   
                   <SwiperSlide>
                     <div className='heart-5' onClick={() => {setIsMaximized(true); maximizeSwiper3Heart5(); setMsg(false);  minimizeOthers3()}}>
-                      <img id='adjust-35' className={isMaximized && swiper3heart5 ? 'maximized-photo position-adjust3' : 'normal-photo'} src="/fotos/casal6.jpg" alt="" />
+                      <img id='adjust-35' className={isMaximized && swiper3heart5 ? 'maximized-photo position-adjust3' : 'normal-photo'} src="./fotos/casal6.jpg" alt="" />
                     </div>
                   </SwiperSlide>
 
                   <SwiperSlide>
                     <div className='heart-6' onClick={() => {setIsMaximized(true); maximizeSwiper3Heart6(); setMsg(false);  minimizeOthers3()}}>
-                      <img id='adjust-36' className={isMaximized && swiper3heart6 ? 'maximized-photo position-adjust3' : 'normal-photo'} src="/fotos/casal7.jpg" alt="" />
+                      <img id='adjust-36' className={isMaximized && swiper3heart6 ? 'maximized-photo position-adjust3' : 'normal-photo'} src="./fotos/casal7.jpg" alt="" />
                     </div>
                   </SwiperSlide>
 
                   <SwiperSlide>
                     <div className='heart-7' onClick={() => {setIsMaximized(true); maximizeSwiper3Heart7(); setMsg(false);  minimizeOthers3()}}>
-                      <img id='adjust-37' className={isMaximized && swiper3heart7 ? 'maximized-photo position-adjust3' : 'normal-photo'} src="/fotos/casal8.jpg" alt="" />
+                      <img id='adjust-37' className={isMaximized && swiper3heart7 ? 'maximized-photo position-adjust3' : 'normal-photo'} src="./fotos/casal8.jpg" alt="" />
                     </div>
                   </SwiperSlide>
 
