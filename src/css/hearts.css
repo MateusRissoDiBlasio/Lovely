@@ -339,7 +339,7 @@ audio{
 @font-face {
   font-family: "SongFont";
   /* src: local("SongFont"), url("/fonts/Aclonica-Regular.ttf"); */
-  src: local("SongFont"), url("/fonts/Aldrich-Regular.ttf");
+  src: local("SongFont"), url("../fonts/Aldrich-Regular.ttf");
   /* src: local("SongFont"), url("/fonts/Anton-Regular.ttf"); */
   /* src: local("SongFont"), url("/fonts/Economica-Regular.ttf"); */
   /* src: local("SongFont"), url("/fonts/RuslanDisplay-Regular.ttf"); */
