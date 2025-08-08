@@ -322,6 +322,8 @@ img {
 }
 
 .songdiv{
+  position: relative;
+  z-index: 500;
   opacity: 0;
   animation: fadein 2s ease-in forwards;
 }
