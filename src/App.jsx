@@ -9,7 +9,6 @@ import 'swiper/css';
 import 'swiper/css/effect-creative';
 import './swiperstyles.css'
 import { EffectCards } from 'swiper/modules';
-import music from './music/manha-de-sol.mp3';
 
 import { tsParticles } from "@tsparticles/engine";
 import { loadHeartShape } from "@tsparticles/shape-heart";
@@ -2807,7 +2806,7 @@ function App() {
         { window.innerWidth >= 1160 && window.innerWidth <= 1164 ?
           <div className='songdiv'>
             <audio id='song' controls autoPlay>
-              <source src={music} type='audio/mpeg'/>
+              <source src='./music/manha-de-sol.mp3' type='audio/mpeg'/>
             </audio>
             <p className='songname'>3030 - Manhã De Sol</p>
           </div> :'' }
