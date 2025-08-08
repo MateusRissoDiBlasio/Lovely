@@ -83,19 +83,23 @@ img {
 #adjust-37{
     object-position: 0px -110px;
 }
-
+.songdiv{
+    width: 400px;
+    position: relative;
+    z-index: 500;
+    opacity: 0;
+    animation: fadein 2s ease-in forwards;
+    transform: translate(0px, 0px);
 }
+
 audio{
     position: relative;
     z-index: 500;
-    transform: translate(-370px, 30px);
+    transform: translate(0px, 30px);
 }
 
 .songname{
-    position: relative;
-    z-index: 500;
-    transform: translate(-370px, 10px);
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    font-size: 16px;
+    transform: translate(0px, 10px);   
+}
+
 }
