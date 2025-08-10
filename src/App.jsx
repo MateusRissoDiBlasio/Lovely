@@ -2625,14 +2625,14 @@ function App() {
 
   // console.log(window.innerWidth > 1164)
   setTimeout(() => { 
-      if(window.innerWidth >= 1160 && window.innerWidth <= 1164){   
+      if(window.innerWidth >= 1160 && window.innerWidth <= 1200){   
         document.getElementById('song').volume = 0.5;
       }
   }, 1000);
   return (
     
       <>              
-        { window.innerWidth < 1160 || window.innerWidth > 1164 ? <div className='displayerror'>
+        { window.innerWidth < 1160 || window.innerWidth > 1200 ? <div className='displayerror'>
           <p>Só vai funcionar em seu notebook</p>
         </div> : ''}
 
