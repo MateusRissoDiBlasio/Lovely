@@ -2803,7 +2803,7 @@ function App() {
           <p className='msg2-4'>pois você merece ser muito feliz."</p>
 
         </div>
-        { window.innerWidth >= 1160 && window.innerWidth <= 1164 ?
+        { window.innerWidth >= 1160 && window.innerWidth <= 1200 ?
           <div className='songdiv'>
             <audio id='song' controls autoPlay>
               <source src='./music/manha-de-sol.mp3' type='audio/mpeg'/>
